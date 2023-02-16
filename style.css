@@ -1,0 +1,101 @@
+body{
+    margin:0;
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./backimg.jpg");
+    background-size: cover;
+}
+
+.heading{
+    color: aquamarine;
+}
+
+.blur{
+    transition: 0.8s;
+    opacity: 1;
+    filter: blur(10px);
+}
+
+.btn{
+   padding:1% 3% 1% 3%;
+   background-color: beige;
+   border-radius: 10px;
+   border-color: rgba(255,255,255,0.3);
+   font-size: 16px;
+   font-weight: bold;
+}
+
+.btn:hover{
+    background-color:coral;
+}
+
+.popup{
+    height: 30%;
+    width: 30%;
+    background-color: cornflowerblue;
+    position:absolute;
+    top:50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px rgba(0,0 ,0 ,0.3);
+    opacity: 1;
+    transition: 0.8s;
+}
+
+#name{
+    background-color: bisque;
+    border-style: none;
+    box-shadow: 10px 10px rgba(0,0 ,0 ,0.3);
+    border-radius: 10px;
+    width: 65%;
+    height: 15%;
+    margin: 10%;
+}
+
+#name:focus{
+    outline: none;
+}
+
+.fa-solid{
+    font-size: 25px;
+    position: absolute;
+    top:5%;
+    right: 5%;
+}
+.fa-solid:hover{
+    color: lightcoral;
+}
+
+.enter{
+    padding: 10px;
+    width: 30%;
+    color:black;
+    background-color:antiquewhite;
+    border-color: rgba(255,255,255,0.3);
+    border-radius: 10px;
+}
+
+.enter:hover{
+    transform: scale(0.80);
+    background-color: rgb(174, 220, 234);
+    box-shadow:10px 10px rgba(0,0 ,0 ,0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+.hidden{
+    visibility:hidden ;
+    opacity: 0;
+    transition: all 0.8s;
+}
